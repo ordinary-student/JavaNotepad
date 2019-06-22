@@ -1,1 +1,10 @@
 # JavaNotepad
+![Image text](https://github.com/ordinary-student/JavaNotepad/blob/master/introduction/home.png)
+![Image text](https://github.com/ordinary-student/JavaNotepad/blob/master/introduction/file_menu.png)
+![Image text](https://github.com/ordinary-student/JavaNotepad/blob/master/introduction/edit_menu.png)
+![Image text](https://github.com/ordinary-student/JavaNotepad/blob/master/introduction/format_menu.png)
+![Image text](https://github.com/ordinary-student/JavaNotepad/blob/master/introduction/view_menu.png)
+![Image text](https://github.com/ordinary-student/JavaNotepad/blob/master/introduction/help_menu.png)
+![Image text](https://github.com/ordinary-student/JavaNotepad/blob/master/introduction/helptopics.png)
+![Image text](https://github.com/ordinary-student/JavaNotepad/blob/master/introduction/about.png)
+![Image text](https://github.com/ordinary-student/JavaNotepad/blob/master/introduction/popmenu.png)
