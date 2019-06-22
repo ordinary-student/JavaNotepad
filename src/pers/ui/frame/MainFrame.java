@@ -52,25 +52,25 @@ public class MainFrame extends AbstractFrame
 	private static final long serialVersionUID = 7019955668365884828L;
 	// 菜单
 	private JMenu fileMenu, editMenu, formatMenu, viewMenu, helpMenu;
-	// “文件”的菜单项
+	// "文件"的菜单项
 	private JMenuItem fileMenu_New, fileMenu_Open, fileMenu_Save, fileMenu_SaveAs, fileMenu_PageSetUp, fileMenu_Print,
 			fileMenu_Exit;
-	// “编辑”的菜单项
+	// "编辑"的菜单项
 	private JMenuItem editMenu_Undo, editMenu_Cut, editMenu_Copy, editMenu_Paste, editMenu_Delete, editMenu_Find,
 			editMenu_FindNext, editMenu_Replace, editMenu_GoTo, editMenu_SelectAll, editMenu_TimeDate;
-	// “格式”的菜单项
+	// "格式"的菜单项
 	private JCheckBoxMenuItem formatMenu_LineWrap;
 	private JMenuItem formatMenu_Font;
-	// “查看”的菜单项
+	// "查看"的菜单项
 	private JCheckBoxMenuItem viewMenu_Status;
-	// “帮助”的菜单项
+	// "帮助"的菜单项
 	private JMenuItem helpMenu_HelpTopics, helpMenu_AboutNotepad;
 	// 右键弹出菜单
 	private JPopupMenu popupMenu;
 	// 右键弹出菜单项
-	private JMenuItem popupMenu_Undo, popupMenu_Cut, popupMenu_Copy, popupMenu_Paste, popupMenu_Delete,
+	private JMenuItem popupMenu_Undo, popupMenu_Cut, popupMenu_Copy, popupMenu_Paste, popupMenu_Delete,popupMenu_Find,
 			popupMenu_SelectAll;
-	// “文本”编辑区域
+	// "文本"编辑区域
 	private JTextArea editArea;
 	// 状态栏标签
 	private JLabel statusLabel;
@@ -80,15 +80,16 @@ public class MainFrame extends AbstractFrame
 	private Clipboard clipBoard = toolkit.getSystemClipboard();
 	// 创建撤销操作管理器
 	private UndoManager undoManager = new UndoManager();
-	// protected UndoableEditListener undoHandler = new UndoHandler();
+	
 	// 存放编辑区原来的内容，用于比较文本是否有改动
 	private String oldValue;
 	// 是否新文件(未保存过的)
 	private boolean isNewFile = true;
 	// 当前文件名
 	private File currentFile;
+	//是否已经保存
 	private boolean isSave;
-	private JMenuItem popupMenu_Find;
+	
 
 	/*
 	 * 构造方法
@@ -469,6 +470,7 @@ public class MainFrame extends AbstractFrame
 		}
 	}
 
+    //点击事件
 	@Override
 	public void actionPerformed(ActionEvent e)
 	{

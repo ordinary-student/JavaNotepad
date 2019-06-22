@@ -18,11 +18,12 @@ public class JavaNotepad
 		// 设置窗口风格样式
 		try
 		{
+			// 设置本地系统默认的窗口风格样式
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e)
 		{
 			e.printStackTrace();
-			JOptionPane.showMessageDialog(null, "加载本系统窗口样式失败！");
+			JOptionPane.showMessageDialog(null, "加载本地系统窗口样式失败！");
 		} finally
 		{
 			new MainFrame().setVisible(true);

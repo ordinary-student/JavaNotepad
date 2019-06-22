@@ -27,10 +27,10 @@ public class FileUtil
 	}
 
 	/**
-	 * 读取指定文件
+	 * 读取指定文件的内容
 	 * 
-	 * @param filePath
-	 * @return
+	 * @param file 待读取的文件
+	 * @return 文件的内容
 	 */
 	public static String readFile(File file)
 	{
@@ -90,8 +90,8 @@ public class FileUtil
 	/**
 	 * 将内容写入文件
 	 * 
-	 * @param file
-	 * @param content
+	 * @param file 要写入的目标文件
+	 * @param content 待写入的内容
 	 */
 	public static void writeFile(File file, String content)
 	{
