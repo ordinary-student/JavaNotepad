@@ -13,8 +13,11 @@ import java.io.Reader;
 
 import javax.swing.JOptionPane;
 
-/*
+/**
  * 读写文件工具类
+ * 
+ * @author ordinary-student
+ *
  */
 public class FileUtil
 {
@@ -29,7 +32,7 @@ public class FileUtil
 	/**
 	 * 读取指定文件的内容
 	 * 
-	 * @param file 待读取的文件
+	 * @param file待读取的文件
 	 * @return 文件的内容
 	 */
 	public static String readFile(File file)
@@ -90,8 +93,8 @@ public class FileUtil
 	/**
 	 * 将内容写入文件
 	 * 
-	 * @param file 要写入的目标文件
-	 * @param content 待写入的内容
+	 * @param file要写入的目标文件
+	 * @param content待写入的内容
 	 */
 	public static void writeFile(File file, String content)
 	{

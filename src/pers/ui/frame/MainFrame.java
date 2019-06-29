@@ -68,7 +68,7 @@ public class MainFrame extends AbstractFrame
 	// 右键弹出菜单
 	private JPopupMenu popupMenu;
 	// 右键弹出菜单项
-	private JMenuItem popupMenu_Undo, popupMenu_Cut, popupMenu_Copy, popupMenu_Paste, popupMenu_Delete,popupMenu_Find,
+	private JMenuItem popupMenu_Undo, popupMenu_Cut, popupMenu_Copy, popupMenu_Paste, popupMenu_Delete, popupMenu_Find,
 			popupMenu_SelectAll;
 	// "文本"编辑区域
 	private JTextArea editArea;
@@ -80,16 +80,15 @@ public class MainFrame extends AbstractFrame
 	private Clipboard clipBoard = toolkit.getSystemClipboard();
 	// 创建撤销操作管理器
 	private UndoManager undoManager = new UndoManager();
-	
+
 	// 存放编辑区原来的内容，用于比较文本是否有改动
 	private String oldValue;
 	// 是否新文件(未保存过的)
 	private boolean isNewFile = true;
 	// 当前文件名
 	private File currentFile;
-	//是否已经保存
+	// 是否已经保存
 	private boolean isSave;
-	
 
 	/*
 	 * 构造方法
@@ -470,7 +469,7 @@ public class MainFrame extends AbstractFrame
 		}
 	}
 
-    //点击事件
+	// 点击事件
 	@Override
 	public void actionPerformed(ActionEvent e)
 	{
